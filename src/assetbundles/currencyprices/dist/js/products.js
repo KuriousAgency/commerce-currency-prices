@@ -48,7 +48,7 @@
 
 		$('#variants .btn.add').on('click', function(e) {
 			setTimeout(function() {
-				var $new = $('#variants [data-id^="new"]').last(),
+				var $new = $('#variants .variant-matrixblock[data-id^="new"]').last(),
 					$field = $new.find('.variant-properties .field[id$="-price-field"]');
 
 				$('#prices-new')
